@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}Контакты — Пёсьи лапки{% endblock %}
+
+{% block content %}
+
+<h2 class="mb-4">📞 Свяжитесь с нами</h2>
+
+<!-- Основной блок контактов и формы -->
+<div class="row mb-5">
+  <!-- Левая колонка: контактная информация -->
+  <div class="col-12 col-lg-6">
+    <div class="mb-4">
+      <h4><i class="bi bi-geo-alt-fill text-primary"></i> Адрес</h4>
+      <p>г. Москва, ул. Собачья, д. 5</p>
+    </div>
+
+    <div class="mb-4">
+      <h4><i class="bi bi-telephone-fill text-primary"></i> Телефон</h4>
+      <p>+7 (495) 123-45-67</p>
+    </div>
+
+    <div class="mb-4">
+      <h4><i class="bi bi-envelope-fill text-primary"></i> Email</h4>
+      <p><a href="mailto:hello@paws.ru">hello@paws.ru</a></p>
+    </div>
+
+    <div>
+      <h4><i class="bi bi-globe2 text-primary"></i> Мы в соцсетях</h4>
+      <p>
+        <a href="#" class="me-3"><i class="bi bi-facebook"></i> Facebook</a>
+        <a href="#" class="me-3"><i class="bi bi-instagram"></i> Instagram</a>
+        <a href="#"><i class="bi bi-twitter"></i> Twitter</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Правая колонка: форма обратной связи -->
+  <div class="col-12 col-lg-6">
+    <div class="p-4 bg-white border rounded shadow-sm">
+      <h4 class="mb-4"><i class="bi bi-chat-dots-fill text-primary"></i> Напишите нам</h4>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Ваше имя</label>
+          <input type="text" class="form-control" id="name" placeholder="Иван Иванов">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Сообщение</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Ваше сообщение..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Отправить сообщение</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Дополнительная информация (по желанию) -->
+<div class="text-center text-muted">
+  <p>Мы ответим в течение 24 часов. Спасибо, что вы с нами!</p>
+</div>
+
+{% endblock %}

@@ -15,8 +15,8 @@ def blog():
 
 @app.route('/contacts')
 def contacts():
-    return render_template('contacts.html')
-
+    return render_template('contact.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5001)  # или любой другой порт
+
