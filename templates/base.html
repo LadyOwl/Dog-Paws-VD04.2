@@ -16,19 +16,121 @@
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 
   <style>
+    /* Увеличиваем общий шрифт сайта */
+    body {
+      font-size: 1.1rem; /* ~17–18px вместо 16px */
+      line-height: 1.7;
+    }
+
+    /* Заголовки — крупнее и читабельнее */
+    h1, h2, h3, h4, h5 {
+      font-weight: 600;
+    }
+
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2.1rem; }
+    h3 { font-size: 1.7rem; }
+    h4 { font-size: 1.4rem; }
+    h5 { font-size: 1.25rem; }
+
+    /* Навигация — крупнее */
+    .navbar-nav .nav-link {
+      font-size: 1.1rem;
+      padding: 0.5rem 1rem;
+    }
+
+    /* Карточки — увеличиваем текст */
+    .card-title {
+      font-size: 1.3rem;
+    }
+
+    .card-text {
+      font-size: 1.1rem;
+    }
+
+    /* Аккордеон — увеличиваем текст внутри */
+    .accordion-body {
+      font-size: 1.1rem;
+    }
+
+    .accordion-body ul {
+      line-height: 1.8;
+    }
+
+    .accordion-button {
+      font-size: 1.2rem;
+      padding: 1rem 1.25rem;
+    }
+
+    /* Блог — увеличиваем заголовки и текст статей */
+    .card .card-body {
+      padding: 1.25rem;
+    }
+
+    .card .card-title {
+      font-size: 1.4rem;
+      color: #0056b3;
+    }
+
+    .card .card-text {
+      font-size: 1.1rem;
+    }
+
+    .card small {
+      font-size: 0.95rem;
+    }
+
+    /* Форма на странице контактов */
+    .form-label {
+      font-size: 1.1rem;
+    }
+
+    .form-control {
+      font-size: 1.1rem;
+      padding: 0.5rem;
+    }
+
+    .btn {
+      font-size: 1.1rem;
+      padding: 0.5rem 1.25rem;
+    }
+
+    /* Подписи и мелкий текст */
+    .text-muted, small, address {
+      font-size: 1rem;
+    }
+
+    /* Для мобильных: не даём тексту сжиматься */
+    @media (max-width: 576px) {
+      body {
+        font-size: 1.05rem;
+      }
+      .accordion-button {
+        font-size: 1.1rem;
+        padding: 0.75rem 1rem;
+      }
+      .navbar-nav .nav-link {
+        font-size: 1.05rem;
+        padding: 0.4rem 0.8rem;
+      }
+    }
+
+    /* Кастомный стиль названия сайта */
+    .site-title {
+      font-family: 'Fredoka One', cursive;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    /* Стиль карточек */
     .card-custom {
       background-color: #e0f7fa;
       border-radius: .5rem;
       transition: box-shadow .3s;
     }
+
     .card-custom:hover {
       box-shadow: 0 0 .5rem blue;
-    }
-
-    .site-title {
-      font-family: 'Fredoka One', cursive;
-      font-size: 2.5rem;
-      font-weight: bold;
     }
 
     /* Активный пункт меню */
@@ -86,7 +188,7 @@
   <!-- Футер -->
   <footer class="bg-light text-center py-4 mt-5">
     <div class="container">
-      <p>Контакты: pet@example.com, +1 (234) 567-8901</p>
+      <p>Контакты: pet@example.com, +7 (234) 567-8901</p>
       <p>
         Социальные сети:
         <a href="#">Facebook</a> |
